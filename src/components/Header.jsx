@@ -8,18 +8,18 @@ import Navbar from 'react-bootstrap/Navbar';
 import sprite from '../assets/img/ico-sprite.svg';
 
 const Header = () => (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="w-100 position-fixed">
         <Container>
-            <Navbar.Brand>#PhotoShot</Navbar.Brand>
+            <Navbar.Brand>Vivo Furniture</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto gap-5">
-                    <Link to="/" className={({ isActive }) => (isActive ? "link-active" : "")}>Головна</Link>
-                    <Link to="/#about" className={({ isActive }) => (isActive ? "link-active" : "")}>О нас</Link>
-                    <Link to="/#action" className={({ isActive }) => (isActive ? "link-active" : "")}>Акции</Link>
-                    <Link to="/#contacts" className={({ isActive }) => (isActive ? "link-active" : "")}>Контакты</Link>
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                <Nav className="gap-5 mx-auto">
+                    <Link to="/" >Главная</Link>
+                    <Link to="/#about" >О нас</Link>
+                    <Link to="/#action" >Акции🔥</Link>
+                    <Link to="/#contacts" >Контакты</Link>
                 </Nav>
-                <Stack className="header__controll" direction="horizontal" gap={2}>
+                <Stack className="header__controll ms-5" direction="horizontal" gap={4}>
                     <div className="header__controll-item header__controll-item_account">
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <use href={sprite + "#account"} />
@@ -29,6 +29,9 @@ const Header = () => (
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <use href={sprite + "#cart"} />
                         </svg>
+                        <div className="header__cart-number">
+                            0
+                        </div>
                     </div>
                     <div className="header__controll-item header__controll-item_favorite">
                         <svg width="24" height="24" viewBox="0 0 24 24">

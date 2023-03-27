@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #333;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+.navbar {
+    z-index: 10;
+    background-color: white!important;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.header__controll-item svg {
+    zoom: 0.9;
+    fill: #333;
+}
+
+.header__controll-item {
+    position: relative;
+}
+
+.header__cart-number {
+    font-weight: 700;
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 0;
+}
+
+.home__controll-item {
+    cursor: pointer;
+}
+
+.home__item {
+    display: none;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home__item_active {
+    display: flex;
+}
+
+.home__uptitle {
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: center;
+    line-height: 29px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    white-space: normal;
+    min-height: 0px;
+    min-width: 169px;
+    max-height: none;
+    max-width: 210px;
+    padding: 4px;
+    color: rgb(61, 69, 82);
+    opacity: 0.710937;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.21522, 0, 1);
+    transform-origin: 50% 50% 0px;
+    background: white;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.home__title {
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+}
+
+.home__title span {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.home__gallery-controll {
+    bottom: 40px;
+    right: 40px;
+    color: rgba(128, 128, 128, 0.581);
+}
+
+.home__gallery-number {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.home__gallery-number span {
+    font-size: 60px;
+    color: #333333c6;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/Header.jsx'
+import Home from './components/Home.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/App.css"
 import {
@@ -16,8 +17,7 @@ const App = () => (
 
     <main>
       <Routes>
-        <Route path="/portfolio" element={<Header />} />
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<Home />} />
         <Route path="/#about" element={<Header />} />
       </Routes>
     </main>
