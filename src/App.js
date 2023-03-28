@@ -1,6 +1,10 @@
 import React from 'react'
+
 import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
+import Footer from './components/Footer.jsx'
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/App.css"
 import {
@@ -22,7 +26,7 @@ const App = () => (
       </Routes>
     </main>
     <footer>
-
+      <Footer />
     </footer>
   </Router>
 );

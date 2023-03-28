@@ -20,6 +20,11 @@ a {
     outline: none;
 }
 
+.title {
+    font-weight: 600;
+    font-size: 47px;
+}
+
 .navbar {
     z-index: 10;
     background-color: white!important;
@@ -162,4 +167,104 @@ a {
     opacity: 0.8;
     font-size: 15px;
     letter-spacing: 2px;
+}
+
+.about__instagram-name {
+    font-size: 18px;
+    opacity: 0.6;
+    letter-spacing: 2px;
+}
+
+.about__instagram-item {
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.about__instagram-name {
+    opacity: 0;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.about__instagram-item:hover:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.396);
+    content: '';
+    position: absolute;
+    transition-duration: 0.4s;
+}
+
+.about__instagram-item:hover .about__instagram-name {
+    opacity: 1;
+}
+
+.footer__outer {
+    margin-top: 50px;
+}
+
+.footer__inner {
+    background: #333;
+    padding: 50px;
+}
+
+.footer__copy {
+    background: #3333331f;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.footer__copy span {
+    font-weight: 600;
+}
+
+.footer__title {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer__item {
+    color: white;
+}
+
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer__desc {
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.socials-item svg {
+    fill: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer__item svg {
+    fill: white;
+    margin-right: 13px;
+    zoom: 0.8;
+}
+
+.form__button {
+    top: 0px;
+    right: 0px;
+    zoom: 1.55;
 }

@@ -9,6 +9,12 @@ import category_1 from "../assets/img/category-1.jpg";
 import category_2 from "../assets/img/category-2.jpg";
 import category_3 from "../assets/img/category-3.jpg";
 
+import insta_1 from "../assets/img/insta-1.jpg";
+import insta_2 from "../assets/img/insta-2.jpg";
+import insta_3 from "../assets/img/insta-3.jpg";
+import insta_4 from "../assets/img/insta-4.jpg";
+import insta_5 from "../assets/img/insta-5.jpg";
+
 const Home = () => {
     const [number, setNumber] = useState(1);
     const [gallery, setGallery] = useState(3);
@@ -80,22 +86,74 @@ const Home = () => {
                         <Stack direction="horizontal" gap={3} className="category__block justify-content-around">
                             <div className='category__item' style={{ backgroundImage: `url(${category_1})` }}>
                                 <div className='category__name'>
-                                    Lighting <span> - 12 products</span>
+                                    Освещение <span> - 12 товаров</span>
                                 </div>
                             </div>
                             <div className='category__item' style={{ backgroundImage: `url(${category_2})` }}>
                                 <div className='category__name'>
-                                    Furniture <span> - 12 products</span>
+                                    Мебель <span> - 12 товаров</span>
                                 </div>
                             </div>
                             <div className='category__item' style={{ backgroundImage: `url(${category_3})` }}>
                                 <div className='category__name'>
-                                    Decoration <span> - 12 products</span>
+                                    Декор <span> - 12 товаров</span>
                                 </div>
                             </div>
                         </Stack>
                     </Container>
                 </div>
+            </div>
+            <div className="about" id="about">
+                <Container>
+                    <div className="about__title title text-center mb-4">
+                        О Магазине
+                    </div>
+                    <div className="about__desc text-center w-75 mx-auto mb-5">
+                        <b>Vivo Furniture</b> - это магазин мебели, который предлагает широкий выбор качественной и
+                        стильной мебели для дома и офиса. У нас вы найдете все, что нужно для обустройства своего
+                        пространства: диваны, кровати, шкафы, столы, стулья и многое другое. Мы убеждены, что мебель
+                        должна быть не только функциональной, но и красивой. Поэтому мы тщательно отбираем товары от
+                        ведущих производителей и следим за тенденциями в дизайне интерьеров.
+                        <br />
+                        <br />
+                        В нашем магазине вы найдете мебель разных стилей и цветовых решений, чтобы создать уютный и
+                        стильный дом или рабочее место. Приходите к нам за качественной мебелью по разумной цене!
+                    </div>
+                    <div className="about__instagram">
+                        <Stack direction="horizontal" gap={4} className="about__instagram-list">
+                            <div className="about__instagram-item position-relative d-flex align-items-center justify-content-center">
+                                <div className="about__instagram-name position-absolute">
+                                    @VivoStudio
+                                </div>
+                                <img src={insta_1} className="w-100" />
+                            </div>
+                            <div className="about__instagram-item position-relative d-flex align-items-center justify-content-center">
+                                <div className="about__instagram-name position-absolute">
+                                    @VivoStudio
+                                </div>
+                                <img src={insta_2} className="w-100" />
+                            </div>
+                            <div className="about__instagram-item position-relative d-flex align-items-center justify-content-center">
+                                <div className="about__instagram-name position-absolute">
+                                    @VivoStudio
+                                </div>
+                                <img src={insta_3} className="w-100" />
+                            </div>
+                            <div className="about__instagram-item position-relative d-flex align-items-center justify-content-center">
+                                <div className="about__instagram-name position-absolute">
+                                    @VivoStudio
+                                </div>
+                                <img src={insta_4} className="w-100" />
+                            </div>
+                            <div className="about__instagram-item position-relative d-flex align-items-center justify-content-center">
+                                <div className="about__instagram-name position-absolute">
+                                    @VivoStudio
+                                </div>
+                                <img src={insta_5} className="w-100" />
+                            </div>
+                        </Stack>
+                    </div>
+                </Container>
             </div>
         </div>
     );
