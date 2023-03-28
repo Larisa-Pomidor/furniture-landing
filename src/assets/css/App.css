@@ -124,3 +124,42 @@ a {
     font-size: 60px;
     color: #333333c6;
 }
+
+.category__item {
+    width: 30%;
+    height: 400px;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.category__item:hover {
+    background-size: 110%;
+    transition-duration: 0.4s;
+}
+
+.category__item:nth-child(2) {
+    height: 480px;
+}
+
+.category__inner {
+    padding: 100px 0;
+}
+
+.category__name {
+    background: white;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 6px 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.category__name span {
+    opacity: 0.8;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
