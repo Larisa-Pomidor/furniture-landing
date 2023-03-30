@@ -105,7 +105,7 @@ const Home = () => {
             </div>
             <div className="about" id="about">
                 <Container>
-                    <div className="about__title title text-center mb-4">
+                    <div className="about__title title text-center">
                         О Магазине
                     </div>
                     <div className="about__desc text-center w-75 mx-auto mb-5">

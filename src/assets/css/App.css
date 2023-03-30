@@ -27,7 +27,7 @@ a {
 
 .navbar {
     z-index: 10;
-    background-color: white!important;
+    background-color: white !important;
     top: 0;
     left: 0;
 }
@@ -60,6 +60,10 @@ a {
     justify-content: center;
     font-size: 10px;
     line-height: 0;
+}
+
+.navbar.active {
+    background-color: #d8faff !important;
 }
 
 .home__controll-item {
@@ -150,7 +154,7 @@ a {
 }
 
 .category__inner {
-    padding: 100px 0;
+    padding: 100px 0 70px 0;
 }
 
 .category__name {
@@ -167,6 +171,10 @@ a {
     opacity: 0.8;
     font-size: 15px;
     letter-spacing: 2px;
+}
+
+.about__title {
+    margin-bottom: 40px;
 }
 
 .about__instagram-name {
